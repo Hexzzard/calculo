@@ -1,22 +1,9 @@
-from flask import Flask, app, json, render_template, jsonify, redirect, url_for, request
-import folium
-from folium.plugins import minimap
+from flask import Flask, app, json, render_template, request
 import numpy as np
-import json
-from flask import request
 from geopy.distance import geodesic
-from geopy.geocoders import Nominatim
-import pandas as pd
-from scipy.interpolate import lagrange
-import matplotlib
-import matplotlib.pyplot as plt
-from sympy import *
-from scipy import linalg
-from scipy import interpolate as itp
-from numpy import polynomial as Pol
+from sympy import symbols
 from scipy.interpolate import interp1d
 import scipy.integrate
-
 
 a2 = np.load('Limite izquierda.npy')
 b2 = np.load('limite derecha.npy')
