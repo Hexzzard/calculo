@@ -10,16 +10,12 @@
 <body>
 
 
-        <div class="container">
+        <div class="container-responsive">
                 <div class="row">
-                  <div class="col-6 float-left ">
-                        <div class="position-absolute top-0 start-0 col d-flex flex-column float-left"> 
+                  <div class="col-6 float-left-responsive">
+                        <div class="position-absolute top-0 start-0 col d-flex flex-column float-left-responsive"> 
                                 <span class="border border-light border-5 rounded">
-                                        <div class="col-sm-6 col-md-6 col-lg-6 responsive" id="map" style="width: 800px; height: 780px"></div>
-                                        <div class="text-center"> 
-                                                <button class="col-6 align-self-end btn btn btn-outline-success" onclick="enviar()">Enviar coordenadas</button>
-                                        </div>
-
+                                        <div class="col-sm-6 col-md-6 col-lg-6-responsive" id="map" style="width: 800px; height: 780px"></div>         
                                 </span>
                         </div>
                   </div>
@@ -60,13 +56,16 @@
                                 <div class="card row" style="width: 18rem;">
                                         <div class="card-body">
                                         <h5 class="card-title">Area retornada</h5>
-                                         
+                                        <div class="text-center"> 
+                                                <button class="col-6 align-self-end btn btn btn-outline-success" onclick="enviar()">Enviar</button>
+                                        </div>                               
                                          <p class="card-text">Area del contorno derecho:</p>
                                          <h6 id="der"></h6>
                                          <p class="card-text">Area del contorno izquierdo:</p>
                                          <h6 id="izq"></h6>
                                          <p class="card-text">Area de la region seleccionada:</p>
                                          <h5 id="reg"></h5>
+
                                  
                                 </div>
                                 
